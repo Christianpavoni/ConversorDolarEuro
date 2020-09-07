@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvDolares"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="517dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <RadioButton
+        android:id="@+id/rbDaE"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvEuros"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="320dp"
+        android:text="Dolares a Euros"
+        android:onClick="cambiar" />
+
+    <RadioButton
+        android:id="@+id/rbEaD"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvEuros"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="253dp"
+        android:text="Euros a Dolares"
+        android:onClick="cambiar"/>
+
+    <TextView
+        android:id="@+id/tvCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/tvDolares"
+        android:layout_marginBottom="184dp"
+        android:text="Cambio a .."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvConversion"
+        android:layout_width="168dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/tvDolares"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="113dp"
+        android:inputType="numberDecimal"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="299dp"
+        android:onClick="convertir"
+        android:text="Convertir" />
+
+    <TextView
+        android:id="@+id/tvEuros"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/tvDolares"
+        android:layout_marginTop="223dp"
+        android:text="Euros:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDolares"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="119dp"
+        android:text="Dolares:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvEuros"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="419dp"
+
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
+
